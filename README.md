@@ -104,13 +104,13 @@ exponet (지수) ⟷ logarithm (로그)
 ### Hash Table vs Array
 
 만약 레스토랑에서 메뉴를 확인한다면
-Array: 아이템을 첫번째부터 끝까지 linear search로 찾음 ⟶ O(n)
+Array: 아이템을 첫번째부터 끝까지 linear search로 찾음 ⟶ O(n) <br>
 Hash Table: 피자의 가격이 궁금하다면 pizza가 key가 됨 ⟶ O(1)
 
 Hash Table은 search, delete, add 모두 O(1)
 
 ```js
-// 🇮🇹가 country에 있는지 확인하고 싶다면?
+// 🇮🇹 가 country에 있는지 확인하고 싶다면?
 
 // Array: linear search 사용해서 비효율적
 const country = ['🇧🇪', '🇸🇪', '🇨🇭', '🇫🇷', '🇬🇧'];
@@ -130,11 +130,11 @@ constries['🇸🇪']; // true
 // 한번의 스텝으로 찾을 수 있다
 ```
 
-Hash Tables에는 Array 구조가 있다
-array에서 아이템에 접근하려면 인덱스를 알아야 한다
-해쉬 테이블은 어떻게 더 빠를 수 있지? (내부에 array 같은 구조가 있다면서)
-**Hash Function** 때문에
-해쉬함수는 key를 숫자로 바꿈
+Hash Tables에는 Array 구조가 있다 <br>
+array에서 아이템에 접근하려면 인덱스를 알아야 한다 <br>
+해쉬 테이블은 어떻게 더 빠를 수 있지? (내부에 array 같은 구조가 있다면서) <br>
+**Hash Function** 때문에 <br>
+해쉬함수는 key를 숫자로 바꿈 <br>
 나중에 key에 해당하는 값을 찾으면 부여한 숫자(인덱스)에 저장된 value를 읽어옴
 
 ### Hash Collision (해시충돌)
@@ -142,8 +142,8 @@ array에서 아이템에 접근하려면 인덱스를 알아야 한다
 : 각기 다른 key에 대해 해시함수가 동일한 숫자를 준 경우
 
 - 해결방법
-  같은 숫자를 받은 곳에 또다른 배열을 넣음 (예: 4번 키 = {[cake], [taco]})
-  만약 cake 값을 찾는다면 hash table로 인해 4번으로 가서(`O(1)`) linear search(`O(n)`)을 한다
+  같은 숫자를 받은 곳에 또다른 배열을 넣음 (예: 4번 키 = {[cake], [taco]}) <br>
+  만약 cake 값을 찾는다면 hash table로 인해 4번으로 가서(`O(1)`) linear search(`O(n)`)을 한다 <br>
   ⚠️ 이런 이유로 Hash Tables는 항상 O(1)은 아니다!
 
 ---
