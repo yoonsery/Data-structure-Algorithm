@@ -2,8 +2,8 @@
 
 Array의 오퍼레이션 [ Read, Search, Add, Delete ]
 
-- **Time Complexity (시간복잡도)**
-  : 데이터 구조의 오퍼레이션 혹은 알고리즘이 얼마나 빠르고 느린지 측정하는 방법
+- **Time Complexity (시간복잡도)** <br>
+  : 데이터 구조의 오퍼레이션 혹은 알고리즘이 얼마나 빠르고 느린지 측정하는 방법 <br>
   얼마나 많은 '단계'가 있는가로 측정
 
 2종류의 메모리가 있다
@@ -17,8 +17,8 @@ Array의 오퍼레이션 [ Read, Search, Add, Delete ]
 
 ### 오퍼레이션
 
-1. `Reading` : 빠름 👍
-   array는 0부터 인덱싱을 한다, 많은 자료를 읽어야 한다면 array가 유용함
+1. `Reading` : 빠름 👍 <br>
+   array는 0부터 인덱싱을 한다, 많은 자료를 읽어야 한다면 array가 유용함 <br>
    (랜덤엑세스로 빠르게 접근 가능)
 
 2. `Searching` -> `Linear Search` (선형검색): 별로 안 빠름 💩 <br>
@@ -43,14 +43,14 @@ Array의 오퍼레이션 [ Read, Search, Add, Delete ]
 # 2. 검색 알고리즘 Search Algorithm
 
 `① Linear Search (선형검색 알고리즘)` <br>
-: 맨앞부터 순서대로 차근차근 검색 <br>
+맨앞부터 순서대로 차근차근 검색 <br>
 if 찾는 값이 맨뒤에 있거나, 없으면 ? 💩
 
 - linear time complexity, 선형 시간복잡도 <br>
   : input 이 많을 수록 time도 선형적으로 증가
 
 `② Binary Search (이진검색)` <br>
-: _Sorted Array_(정렬된 배열)에만 사용 가능
+_Sorted Array_(정렬된 배열)에만 사용 가능
 
 하지만! <br>
 *sorted array*에 아이템을 `추가`하는 건 정렬이 안된 일반 배열에 추가하는 것보다 시간이 걸림 <br>
@@ -83,7 +83,7 @@ exponet (지수) ⟷ logarithm (로그)
 # 4. Sorting Algorithm
 
 - `① Bubble Sort 버블정렬` ⟶ O(n²)
-  : 자주 사용되진 않음, 배열의 두 아이템을 선택하고 비교해서 정렬 👎
+  : 자주 사용되진 않음, 배열의 두 아이템을 선택하고 비교해서 정렬 💩
 
 - `② Selection Sort 선택정렬` ⟶ O(n²)
   : 모든 아이템을 스캔 🤏
