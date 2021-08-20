@@ -147,3 +147,24 @@ array에서 아이템에 접근하려면 인덱스를 알아야 한다 <br>
   ⚠️ 이런 이유로 Hash Tables는 항상 O(1)은 아니다!
 
 ---
+
+# 6. Stack & Queue
+
+Stack & Queue are `ADT`( Abstract Data Type ) 추상적 자료구조  
+ADT는 자료구조의 한 형태로 자료구조의 방법이 `구조의 행동 양식만 정의`되어 있다
+
+`Stack` 은 array가 수직으로 쌓여있다고 생각해 like pancake 🥞  
+`LIFO` : Last In First Out
+
+`queue` 순서대로~  
+`FIFO` : First In First Out
+
+**언제 사용하는거지?**
+
+웹브라우저에서 뒤로가기 누르는 것 ⟶ stack  
+Ctrl + z ⟶ stack  
+이메일 전송 ⟶ queue  
+push notification ⟶ queue  
+쇼핑몰 주문 처리방식 (선착순) ⟶ queue
+
+---
